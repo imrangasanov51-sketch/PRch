@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM манипуляции</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header id="main-header"><h1>ПР11: DOM манипуляции</h1></header>
+    <section id="tasks-section">
+      <div class="task-area" id="task1">
+        <h3>Создание элементов</h3>
+        <div class="target" id="target1"></div>
+      </div>
+      <div class="task-area" id="task2">
+        <h3>Навигация по DOM</h3>
+        <div class="family-tree">
+          <div class="parent" id="parent-element">
+            Родитель
+            <div class="child">Ребёнок 1</div>
+            <div class="child">Ребёнок 2</div>
+            <div class="child special">Особый</div>
+          </div>
+        </div>
+      </div>
+      <div class="task-area" id="task3">
+        <h3>Стили</h3>
+        <div id="style-target" class="style-demo">Элемент</div>
+        <button id="toggle-style">Переключить</button>
+      </div>
+      <div class="task-area" id="task4">
+        <h3>События</h3>
+        <button id="click-btn">Кликни</button>
+        <div id="click-counter" class="output">Кликов: 0</div>
+        <input type="text" id="text-input" placeholder="Введите...">
+        <div id="input-display" class="output"></div>
+      </div>
+      <div class="task-area" id="task5">
+        <h3>Списки</h3>
+        <input type="text" id="item-input" placeholder="Новый элемент">
+        <button id="add-item">Добавить</button>
+        <button id="clear-list">Очистить</button>
+        <ul id="dynamic-list"></ul>
+      </div>
+      <div class="task-area" id="task6">
+        <h3>Форма</h3>
+        <form id="user-form">
+          <div><label>Имя: <input type="text" name="name"></label></div>
+          <div><label>Email: <input type="email" name="email"></label></div>
+          <div><label>Возраст: <input type="number" name="age"></label></div>
+          <button type="submit">Отправить</button>
+        </form>
+        <div id="form-output" class="output"></div>
+      </div>
+    </section>
+  </div>
+  <script src="dom-tasks.js"></script>
+  <script src="dom-tests.js"></script>
+</body>
+</html>
