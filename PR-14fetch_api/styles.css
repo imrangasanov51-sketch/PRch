@@ -1,0 +1,47 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f0f2f5;
+  color: #222;
+  line-height: 1.5;
+}
+.header { background: #1a237e; color: #fff; padding: 16px 24px; }
+.header h1 { font-size: 1.4rem; }
+.container {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 0 16px;
+  display: grid;
+  gap: 20px;
+}
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+.card h2 { margin-bottom: 12px; font-size: 1.1rem; color: #1a237e; }
+.buttons { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 12px; }
+button {
+  border: none; border-radius: 6px; padding: 10px 16px;
+  background: #1a237e; color: #fff; font-size: .9rem;
+  cursor: pointer; transition: background .2s;
+}
+button:hover { background: #303f9f; }
+.output {
+  background: #0d1117; color: #a5d6a7; padding: 12px;
+  border-radius: 6px; font-size: .85rem; white-space: pre-wrap;
+  min-height: 40px; max-height: 320px; overflow: auto;
+}
+.grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 12px; margin-bottom: 12px;
+}
+.user-card {
+  border: 1px solid #ddd; border-radius: 8px; padding: 12px; background: #fafbfc;
+}
+.user-card h3 { font-size: 1rem; margin-bottom: 6px; color: #1a237e; }
+.user-card p { font-size: .85rem; color: #555; }
+.progress { height: 14px; background: #e4e7eb; border-radius: 7px; overflow: hidden; margin-bottom: 12px; }
+.progress-fill { height: 100%; width: 0%; background: #34a853; transition: width .1s linear; }
+#image-container img { border-radius: 8px; margin-bottom: 12px; max-width: 100%; }
